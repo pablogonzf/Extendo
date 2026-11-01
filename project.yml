@@ -1,0 +1,28 @@
+name: DesktopOS
+options:
+  bundleIdPrefix: com.example
+  deploymentTarget:
+    iOS: "17.0"
+targets:
+  DesktopOS:
+    type: application
+    platform: iOS
+    sources: [DesktopOS]
+    info:
+      path: DesktopOS/Info.plist
+      properties:
+        CFBundleDisplayName: DesktopOS
+        UILaunchScreen: {}
+        UIApplicationSceneManifest:
+          UIApplicationSupportsMultipleScenes: true
+        UISupportedInterfaceOrientations:
+          - UIInterfaceOrientationPortrait
+          - UIInterfaceOrientationLandscapeLeft
+          - UIInterfaceOrientationLandscapeRight
+        UIFileSharingEnabled: true
+        LSSupportsOpeningDocumentsInPlace: true
+    settings:
+      base:
+        PRODUCT_BUNDLE_IDENTIFIER: com.example.DesktopOS
+        SWIFT_VERSION: "5.0"
+        TARGETED_DEVICE_FAMILY: "1"
