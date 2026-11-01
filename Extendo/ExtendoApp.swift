@@ -2,7 +2,7 @@ import SwiftUI
 import UIKit
 
 @main
-struct DesktopOSApp: App {
+struct ExtendoApp: App {
     @UIApplicationDelegateAdaptor(AppDelegate.self) private var appDelegate
 
     var body: some Scene {

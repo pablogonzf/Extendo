@@ -1,4 +1,4 @@
-# DesktopOS
+# Extendo
 
 App de iOS que, al conectar un monitor por USB-C, dibuja en él un escritorio simulado
 (ventanas, barra de tareas, menú de inicio y mini-apps). El iPhone hace de trackpad, y
@@ -8,14 +8,14 @@ también puedes conectarle un ratón y un teclado.
 
 ```bash
 brew install xcodegen
-cd DesktopOS
+cd Extendo
 xcodegen generate
-open DesktopOS.xcodeproj
+open Extendo.xcodeproj
 ```
 
 En Xcode: Signing & Capabilities → elige tu Team, ejecuta en un iPhone real.
 (Sin XcodeGen: crea un proyecto iOS App con SwiftUI, borra su ContentView y App,
-arrastra los `.swift` de `DesktopOS/`, y en Info añade
+arrastra los `.swift` de `Extendo/`, y en Info añade
 `Application Scene Manifest → Enable Multiple Windows = YES`.)
 
 ## Uso

@@ -226,7 +226,7 @@ final class FilesSession: Session {
         let fm = FileManager.default
         let items = (try? fm.contentsOfDirectory(atPath: root.path)) ?? []
         guard items.isEmpty else { return }
-        try? "¡Bienvenido a DesktopOS!\n\nHaz doble clic en este archivo para abrirlo en Notas."
+        try? "¡Bienvenido a Extendo!\n\nHaz doble clic en este archivo para abrirlo en Notas."
             .write(to: root.appendingPathComponent("Bienvenido.txt"), atomically: true, encoding: .utf8)
         try? fm.createDirectory(at: root.appendingPathComponent("Documentos"), withIntermediateDirectories: true)
     }

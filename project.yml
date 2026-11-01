@@ -1,17 +1,17 @@
-name: DesktopOS
+name: Extendo
 options:
-  bundleIdPrefix: com.example
+  bundleIdPrefix: com.pablogonzf
   deploymentTarget:
     iOS: "17.0"
 targets:
-  DesktopOS:
+  Extendo:
     type: application
     platform: iOS
-    sources: [DesktopOS]
+    sources: [Extendo]
     info:
-      path: DesktopOS/Info.plist
+      path: Extendo/Info.plist
       properties:
-        CFBundleDisplayName: DesktopOS
+        CFBundleDisplayName: Extendo
         UILaunchScreen: {}
         UIApplicationSceneManifest:
           UIApplicationSupportsMultipleScenes: true
@@ -23,6 +23,6 @@ targets:
         LSSupportsOpeningDocumentsInPlace: true
     settings:
       base:
-        PRODUCT_BUNDLE_IDENTIFIER: com.example.DesktopOS
+        PRODUCT_BUNDLE_IDENTIFIER: com.pablogonzf.extendo
         SWIFT_VERSION: "5.0"
         TARGETED_DEVICE_FAMILY: "1"
